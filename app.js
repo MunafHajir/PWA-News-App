@@ -1,3 +1,7 @@
+const express = require('express');
+const app = express();
+
+
 const apiKey = '6f4fa5447bb24a2687edecc4c1df43b4';
 const defaultSource = 'the-washington-post';
 const sourceSelector = document.querySelector('#sources');
@@ -48,3 +52,5 @@ function createArticle(article) {
     </div>
   `;
 }
+
+module.exports = app;
